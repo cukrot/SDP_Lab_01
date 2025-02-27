@@ -19,38 +19,33 @@ namespace WinFormsApp1.Lab2
 
         private void rdoSunny_CheckedChanged(object sender, EventArgs e)
         {
-            picCloudy.Visible = false;
-            picRainy.Visible = false;
-            picSnowy.Visible = false;
-            picSuny.Visible = true;
-            lblMessage.Text = "It’s going to be a cloudy day today, " + txtName.Text + ".";
+            updatePic(picSuny, rdoSunny);
         }
 
         private void rdoSnowy_CheckedChanged(object sender, EventArgs e)
         {
-            picCloudy.Visible = false;
-            picRainy.Visible = false;
-            picSnowy.Visible = true;
-            picSuny.Visible = false;
-            lblMessage.Text = "It’s going to be a snowy day today, " + txtName.Text + ".";
+            updatePic(picSnowy, rdoSnowy);
         }
 
         private void rdoRainy_CheckedChanged(object sender, EventArgs e)
         {
-            picCloudy.Visible = false;
-            picRainy.Visible = true;
-            picSnowy.Visible = false;
-            picSuny.Visible = false;
-            lblMessage.Text = "It’s going to be a rainy day today, " + txtName.Text + ".";
+            updatePic(picRainy, rdoRainy);
         }
 
         private void rdoCloudy_CheckedChanged(object sender, EventArgs e)
         {
-            picCloudy.Visible = true;
+            updatePic(picCloudy, rdoCloudy);
+        }
+
+        private void updatePic(PictureBox pic, RadioButton rd)
+        {
+            picCloudy.Visible = false;
             picRainy.Visible = false;
             picSnowy.Visible = false;
-            picSuny.Visible = false;
-            lblMessage.Text = "It’s going to be a cloudy day today, " + txtName.Text + ".";
+            picSuny.Visible = true;
+            pic.Visible = true;
+            String str = rd.Text;
+            lblMessage.Text = "It’s going to be a "+ str +" today, " + txtName.Text + ".";
         }
 
     }
