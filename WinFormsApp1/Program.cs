@@ -1,4 +1,5 @@
 using WinFormsApp1.Lab2;
+using WinFormsApp1.Lab3;
 
 namespace WinFormsApp1
 {

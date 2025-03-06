@@ -19,7 +19,16 @@ namespace WinFormsApp1.Lab3
 
         private void btnCast_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("You are welcomed");
+            DialogResult dialogResult;
+            dialogResult = MessageBox.Show($"Do you vote for \n{cboMovie.SelectedItem.ToString()}",
+                "Vote Movie", MessageBoxButtons.YesNoCancel);
+            if (dialogResult == DialogResult.Yes) {
+                MessageBox.Show("You are welcomed");
+            }
+            else
+            {
+                MessageBox.Show("Cancel Voting");
+            }
         }
     }
 }

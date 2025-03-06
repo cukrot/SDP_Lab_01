@@ -39,25 +39,25 @@
             // 
             lstStudents.FormattingEnabled = true;
             lstStudents.ItemHeight = 15;
-            lstStudents.Location = new Point(92, 58);
+            lstStudents.Location = new Point(28, 29);
             lstStudents.Name = "lstStudents";
-            lstStudents.Size = new Size(120, 94);
+            lstStudents.Size = new Size(179, 199);
             lstStudents.TabIndex = 0;
             lstStudents.SelectedIndexChanged += lstStudents_SelectedIndexChanged;
             lstStudents.DoubleClick += lstStudents_DoubleClick;
             // 
             // txtName
             // 
-            txtName.Location = new Point(306, 58);
+            txtName.Location = new Point(256, 29);
             txtName.Name = "txtName";
             txtName.Size = new Size(264, 23);
             txtName.TabIndex = 1;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(315, 129);
+            btnAdd.Location = new Point(265, 111);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(114, 23);
             btnAdd.TabIndex = 2;
             btnAdd.Text = "Add an item";
             btnAdd.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@
             // 
             lblDelete.AutoSize = true;
             lblDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblDelete.Location = new Point(315, 210);
+            lblDelete.Location = new Point(265, 181);
             lblDelete.Name = "lblDelete";
             lblDelete.Size = new Size(137, 15);
             lblDelete.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             lblMessage.BackColor = SystemColors.ActiveCaption;
             lblMessage.BorderStyle = BorderStyle.Fixed3D;
-            lblMessage.Location = new Point(78, 348);
+            lblMessage.Location = new Point(28, 289);
             lblMessage.Name = "lblMessage";
             lblMessage.Size = new Size(492, 44);
             lblMessage.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(559, 379);
             Controls.Add(lblMessage);
             Controls.Add(lblDelete);
             Controls.Add(btnAdd);

@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using WinFormsApp1.Lab2;
+using WinFormsApp1.Lab3;
+namespace WinFormsApp1
 {
     partial class Menu
     {
@@ -35,27 +37,29 @@
             // 
             // label1
             // 
-            label1.Location = new Point(362, 79);
+            label1.Font = new Font("Segoe UI", 36F);
+            label1.Location = new Point(90, 94);
             label1.Name = "label1";
-            label1.Size = new Size(100, 23);
+            label1.Size = new Size(269, 70);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "SDP Labs";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cboLabs
             // 
             cboLabs.FormattingEnabled = true;
-            cboLabs.Location = new Point(304, 163);
+            cboLabs.Location = new Point(157, 184);
             cboLabs.Name = "cboLabs";
             cboLabs.Size = new Size(121, 23);
             cboLabs.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(334, 239);
+            button1.Location = new Point(184, 260);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "Open";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -63,7 +67,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(458, 403);
             Controls.Add(button1);
             Controls.Add(cboLabs);
             Controls.Add(label1);

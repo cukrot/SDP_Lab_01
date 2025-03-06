@@ -26,11 +26,13 @@ namespace WinFormsApp1
             cboLabs.Items.Add("Lab 2B");
             cboLabs.Items.Add("Lab 2C");
             cboLabs.Items.Add("Lab 3A");
+            cboLabs.Items.Add("Lab 3B");
+            cboLabs.Items.Add("Lab 3C");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            switch (cboLabs.SelectedIndex.ToString()){
+            switch (cboLabs.SelectedItem.ToString()){
                 case "Lab1":
                     Form1 lab1 = new Form1();
                     lab1.Show();
@@ -50,6 +52,14 @@ namespace WinFormsApp1
                 case "Lab 3A":
                     frmLab3A lab3A = new frmLab3A();
                     lab3A.Show();
+                    break;
+                case "Lab 3B":
+                    frmLab3B lab3B = new frmLab3B();
+                    lab3B.Show();
+                    break;
+                case "Lab 3C":
+                    frmLab3C lab3C = new frmLab3C();
+                    lab3C.Show();
                     break;
             }
         }

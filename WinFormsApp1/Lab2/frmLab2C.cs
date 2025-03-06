@@ -34,7 +34,8 @@ namespace WinFormsApp1.Lab2
 
         private void lstStudents_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            String str = (String)lstStudents.SelectedItem;
+            lblMessage.Text = "The following item is selected: " + str;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -48,7 +49,8 @@ namespace WinFormsApp1.Lab2
         private void lstStudents_DoubleClick(object sender, EventArgs e)
         {
             String str = (String)lstStudents.SelectedItem;
-            lblMessage.Text = "The following item is selected: " + str;
+            lstStudents.Items.Remove(lstStudents.SelectedItem);
+            lblMessage.Text = "The following item is deleted: " + str;
         }
     }
 }
