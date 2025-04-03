@@ -21,7 +21,8 @@ namespace WinFormsApp1.Lab4
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string response = await GetApiResponse();
+            APICaller apiCaller = new APICaller();
+            string response = await apiCaller.GetApiResponse("/api/SimpleGetAPI/SimpleGetMethod");
             label1.Text = response;
         }
         private async Task<String> GetApiResponse()

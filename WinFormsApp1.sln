@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_WebAPI", "SDP_WebAPI\SDP_WebAPI.csproj", "{A286E231-15F0-4E3A-8A7C-03F7CA968603}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccessController", "DatabaseAccessController\DatabaseAccessController.csproj", "{08F4F509-D305-4572-988E-3502ED3048F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_EntityModels", "SDP_EntityModels\SDP_EntityModels.csproj", "{03252950-5133-4E52-80E7-576F851601C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A286E231-15F0-4E3A-8A7C-03F7CA968603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A286E231-15F0-4E3A-8A7C-03F7CA968603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A286E231-15F0-4E3A-8A7C-03F7CA968603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F4F509-D305-4572-988E-3502ED3048F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F4F509-D305-4572-988E-3502ED3048F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F4F509-D305-4572-988E-3502ED3048F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F4F509-D305-4572-988E-3502ED3048F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03252950-5133-4E52-80E7-576F851601C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03252950-5133-4E52-80E7-576F851601C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03252950-5133-4E52-80E7-576F851601C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03252950-5133-4E52-80E7-576F851601C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
