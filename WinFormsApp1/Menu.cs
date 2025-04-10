@@ -11,6 +11,7 @@ using WinFormsApp1.Lab2;
 using WinFormsApp1.Lab3;
 using WinFormsApp1.Lab4;
 using WinFormsApp1.Lab5;
+using WinFormsApp1.Lab6;
 
 namespace WinFormsApp1
 {
@@ -32,6 +33,7 @@ namespace WinFormsApp1
             cboLabs.Items.Add("Lab 3C");
             cboLabs.Items.Add("Lab 4");
             cboLabs.Items.Add("Lab 5");
+            cboLabs.Items.Add("Lab 6");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +74,10 @@ namespace WinFormsApp1
                 case "Lab 5":
                     frmLab5 lab5 = new frmLab5();
                     lab5.Show();
+                    break;
+                case "Lab 6":
+                    frmLab6 lab6 = new frmLab6();
+                    lab6.Show();
                     break;
             }
         }
