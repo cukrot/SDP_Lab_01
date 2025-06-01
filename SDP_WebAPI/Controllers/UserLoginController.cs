@@ -48,5 +48,23 @@ namespace SDP_WebAPI.Controllers
                 throw ex;
             }
         }
+
+        [HttpPost("Login")]
+        public bool Login([FromBody] LoginRequest loginRequest)
+        {
+            try
+            {
+                String username = loginRequest.username;
+                String password = loginRequest.password;
+
+                dboUserLogin dboUserLogin = new dboUserLogin(_configuration["ConnectionStrings"]);
+                bool login = dboUserLogin.User(username, password);
+                return login;
+                }
+            catch (Exception ex)
+            {
+                    throw ex;
+            }
+        }
     }
 }

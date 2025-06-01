@@ -112,6 +112,8 @@ namespace WinFormsApp1.Lab5
             }
 
         }
+
+        //This method should be put in APICaller, but I am lazy
         private async Task<int> UpdateCustomerDataToAPI(DataTable dtUpdated)
         {
             try
